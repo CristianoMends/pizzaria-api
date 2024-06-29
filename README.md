@@ -1,11 +1,11 @@
 # Pizzaria API
 
-Este é um projeto de exemplo de uma API para gerenciar uma pizzaria, construída com Spring Boot. A API permite a manipulação de informações sobre pizzas e pedidos.
+Este é um projeto de uma API para gerenciar uma pizzaria, construída com Spring Boot. A API permite a manipulação de informações sobre pizzas e pedidos.
 
 ## Diagrama de Classes
 
+```mermaid
 classDiagram
-
     class Pizza {
     Long id
     String name
@@ -49,7 +49,11 @@ classDiagram
     PizzaController --> Pizza
     OrderController --> Order
     OrderController --> Pizza
+```
 
+### Diagrama ERD
+
+![](src/main/java/com/api/pizzaria/docs/erd.png)
 
 ## Funcionalidades da API
 ### Pizzas
